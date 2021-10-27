@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 export class XemhoaPage implements OnInit {
   listHoa: any[] = [];
 
-  ngOnInit(){
+  ngOnInit() {
     var value = sessionStorage.getItem('listHoa');
     this.listHoa = JSON.parse(value);
   }

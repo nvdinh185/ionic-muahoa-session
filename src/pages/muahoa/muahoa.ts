@@ -17,9 +17,9 @@ export class MuahoaPage {
     var hoa = muaHoaForm.value;
     var index = this.listHoa.findIndex(e => e.id == hoa.id);
     if (index >= 0) {
-      this.listHoa[index].soluong = parseInt(this.listHoa[index].soluong)+parseInt(hoa.soluong);
+      this.listHoa[index].soluong = parseInt(this.listHoa[index].soluong) + parseInt(hoa.soluong);
     } else {
-      this.listHoa.push(hoa);      
+      this.listHoa.push(hoa);
     }
     const alert = this.alertCtrl.create({
       title: 'Thành công!',
